@@ -1,3 +1,4 @@
+import "./DropDown.scss";
 const DropDown = (props) => {
     const {label,searchTerm,handleInput}=props;
 

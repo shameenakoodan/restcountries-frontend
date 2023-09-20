@@ -44,8 +44,11 @@ const ListContainer = () => {
     })
     return (
         <div>
-            <SearchBox handleInput={handleInput} />
-            <DropDown handleInput={handleDropDown} />
+            <div className="search">
+                <SearchBox handleInput={handleInput}/>
+                <DropDown handleInput={handleDropDown} />
+            </div>
+
             <div>
                 {loading ? (
                     <p>Loading...</p>
