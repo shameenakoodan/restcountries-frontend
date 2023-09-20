@@ -4,7 +4,7 @@ const FlagCard=(props)=>{
     return(
         <div className="flag-card">
                 <img src={props.flags} alt="Country Flag"  className="flag-size"/>
-                Name : {props.name.common}
+                <p>{props.name.common}</p>
                 <br />
                 Population : {props.population}
                 <br />

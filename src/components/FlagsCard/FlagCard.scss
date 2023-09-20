@@ -3,8 +3,12 @@
 
     /* Add a border to the element */
     border: 2px solid #ccc;
-    width:200px;
+    width:300px;
 }
 .flag-size{
-    width:200px;
+    width:300px;
+    height: 160px;
 }
+.flag-card p:first-of-type {
+    font-weight: bold; /* Example style for the first <p> element within .flag-card */
+  }
