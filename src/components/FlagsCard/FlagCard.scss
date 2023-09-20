@@ -12,3 +12,6 @@
 .flag-card p:first-of-type {
     font-weight: bold; /* Example style for the first <p> element within .flag-card */
   }
+  .number-with-comma::after {
+    content: ',';
+  }

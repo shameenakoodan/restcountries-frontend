@@ -1,18 +1,21 @@
 import "./FlagCard.scss";
-const FlagCard=(props)=>{
-    
-    return(
+const FlagCard = (props) => {
+
+    return (
         <div className="flag-card">
-                <img src={props.flags} alt="Country Flag"  className="flag-size"/>
+            <img src={props.flags} alt="Country Flag" className="flag-size" />
+            <div className="flag-details">
                 <p>{props.name.common}</p>
                 <br />
-                Population : {props.population}
+                <span style={{ fontWeight: 'bold' }}>Population : </span>{props.population}
                 <br />
-                Capital : {props.capital}
+                <span style={{ fontWeight: 'bold' }}>Capital : </span>{props.capital}
                 <br />
-                Region : {props.region}
+                <span style={{ fontWeight: 'bold' }}>Region : </span>{props.region}
                 <br />
-                
+            </div>
+
+
         </div>
     )
 }
