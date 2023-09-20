@@ -1,0 +1,43 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+.left-nav{
+    flex: 50%;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 60px;
+    align-items: center; /* Vertically center the content */
+    padding-top: 20px;
+}
+.right-nav{
+    flex: 50%;
+}
+button{
+    border: none;
+    background-color: white;
+
+}
+.button-container {
+    display: inline-block; /* Display as inline-block to keep image and text on the same line */
+    border: none;
+    cursor: pointer;
+    padding-right: 60px;
+}
+
+/* Style the button text */
+.button-text {
+    display: inline-block; /* Ensure text stays on the same line as the image */
+    vertical-align: middle; /* Vertically align text and image in the middle */
+}
+
+/* Style the button image */
+.button-img {
+    vertical-align: middle; /* Vertically align image and text in the middle */
+    }
+button:hover{
+    color:gray;
+}
