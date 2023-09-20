@@ -1,6 +1,8 @@
+import FlagCard from "../../components/FlagsCard/FlagCard";
 import SearchArea from "../../components/SearchArea/SearchArea";
 import FlagsContainer from "../FlagsContainer/FlagsContainer";
 import React, { useState, useEffect } from 'react';
+import "./ListContainer.scss";
 
 const ListContainer = () => {
     const [data, setData] = useState([]);
@@ -27,19 +29,20 @@ const ListContainer = () => {
         <div>
             <SearchArea />
             <FlagsContainer />
+
             <div>
-      <h1>API Data:</h1>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {data.map((item) => (
-            <li key={item.id}>{item.title}</li>
-          ))}
-        </ul>
-      )}
-    </div>
+                {loading ? (
+                    <p>Loading...</p>
+                ) : (
+                    <div className="flags-container">
+                        {data.map((item) => (
+                            <FlagCard population={item.population} name={item.name} capital={item.capital} region={item.region} flags={item.flags.png} />
+                        ))}
+                    </div>
+                )}
+            </div>
         </div>
     )
 }
 export default ListContainer;
+//            <li key={item.id}>{item.name.common}</li>
