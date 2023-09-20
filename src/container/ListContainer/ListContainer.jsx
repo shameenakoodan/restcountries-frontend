@@ -43,7 +43,7 @@ const ListContainer = () => {
         return flagName.includes(searchTerm) && regionName.includes(region);
     })
     return (
-        <div>
+        <div className="main">
             <div className="search">
                 <SearchBox handleInput={handleInput}/>
                 <DropDown handleInput={handleDropDown} />
