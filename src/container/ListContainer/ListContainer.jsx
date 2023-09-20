@@ -1,19 +1,24 @@
 import FlagCard from "../../components/FlagsCard/FlagCard";
 import SearchArea from "../../components/SearchArea/SearchArea";
-import FlagsContainer from "../FlagsContainer/FlagsContainer";
 import React, { useState, useEffect } from 'react';
 import "./ListContainer.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
+import DropDown from "../../components/DropDown/DropDown";
 
 const ListContainer = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
-
+    const [region, setRegion] = useState("");
     //Handle the input from search box
     const handleInput = (event) => {
         const cleanInput = event.target.value.toLowerCase();
         setSearchTerm(cleanInput);
+    }
+    const handleDropDown = (event) => {
+        const cleanInput = event.target.value.toLowerCase();
+        console.log(cleanInput);
+        setRegion(cleanInput);
     }
     useEffect(() => {
         // Define the API endpoint you want to call
@@ -32,21 +37,22 @@ const ListContainer = () => {
                 setLoading(false);
             });
     }, []);
-    let filteredFlags = data.filter((flag)=>{
-        console.log("Hello");
+    let filteredFlags = data.filter((flag) => {
         const flagName = flag.name.common.toLowerCase();
-            return flagName.includes(searchTerm);
+        const regionName = flag.region.toLowerCase();
+        return flagName.includes(searchTerm) && regionName.includes(region);
     })
     return (
         <div>
-            <SearchBox handleInput = {handleInput}/>
+            <SearchBox handleInput={handleInput} />
+            <DropDown handleInput={handleDropDown} />
             <div>
                 {loading ? (
                     <p>Loading...</p>
                 ) : (
                     <div className="flags-container">
                         {filteredFlags.map((item) => (
-                            <FlagCard population={item.population} name={item.name} capital={item.capital} region={item.region} flags={item.flags.png} />
+                            <FlagCard key={item.key} population={item.population} name={item.name} capital={item.capital} region={item.region} flags={item.flags.png} />
                         ))}
                     </div>
                 )}
