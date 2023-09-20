@@ -12,6 +12,11 @@ input{
     border: none;
     font-size: 11px;
     color: lightgray;
+    outline: none;
+}
+input:focus{
+    color: black;
+    font-size: 12px;
 }
 .search-icon {
     left: 10px; /* Adjust the left positioning as needed */

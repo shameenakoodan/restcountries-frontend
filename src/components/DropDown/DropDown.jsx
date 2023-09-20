@@ -8,8 +8,8 @@ const DropDown = (props) => {
                 <select name={label}
                 value={searchTerm} 
                 onInput={handleInput}
-                >
-                    <option value="" disabled selected>Select an option</option>
+                 className="selection-list">
+                    <option value="" disabled selected>Filter By Region</option>
                     <option value="Americas">Americas</option>
                     <option value="Antarctic">Antarctic</option>
                     <option value="Asia">Asia</option>
