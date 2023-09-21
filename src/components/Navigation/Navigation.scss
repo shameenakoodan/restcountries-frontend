@@ -49,4 +49,13 @@ button:hover{
     .button-container{
         background-color: hsl(209, 23%, 22%);
     }
+    .search-container{
+        background-color: hsl(209, 23%, 22%);
+    }
+    input{
+        background-color: hsl(209, 23%, 22%);        
+    }
+    input:focus{
+        color: white;
+    }
 }
