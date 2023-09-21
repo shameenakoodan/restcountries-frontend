@@ -58,4 +58,13 @@ button:hover{
     input:focus{
         color: white;
     }
+    .selection-list{
+        background-color: hsl(209, 23%, 22%);
+    }
+    option{
+        background-color: hsl(209, 23%, 22%);
+    }
+    select{
+        background-color: hsl(209, 23%, 22%);
+    }
 }
