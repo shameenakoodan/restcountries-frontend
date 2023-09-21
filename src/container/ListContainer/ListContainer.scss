@@ -15,5 +15,10 @@
     flex-direction: row;
 }
 .main{
-    background-color: #fafafa;
+    background-color:hsl(0, 0%, 98%);
+}
+.dark {
+    background-color:hsl(207, 26%, 17%);
+    color: #fff;
+    box-shadow: none;
 }

@@ -1,11 +1,11 @@
 import FlagCard from "../../components/FlagsCard/FlagCard";
-import SearchArea from "../../components/SearchArea/SearchArea";
 import React, { useState, useEffect } from 'react';
 import "./ListContainer.scss";
 import SearchBox from "../../components/SearchBox/SearchBox";
 import DropDown from "../../components/DropDown/DropDown";
 
-const ListContainer = () => {
+const ListContainer = (props) => {
+    const {theme}=props;
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
@@ -19,6 +19,7 @@ const ListContainer = () => {
         const cleanInput = event.target.value.toLowerCase();
         console.log(cleanInput);
         setRegion(cleanInput);
+        console.log(theme);
     }
     useEffect(() => {
         // Define the API endpoint you want to call
@@ -43,7 +44,7 @@ const ListContainer = () => {
         return flagName.includes(searchTerm) && regionName.includes(region);
     })
     return (
-        <div className="main">
+        <div className= {`main ${theme}`}>
             <div className="search">
                 <SearchBox handleInput={handleInput}/>
                 <DropDown handleInput={handleDropDown} />

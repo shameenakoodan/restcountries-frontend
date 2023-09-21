@@ -41,3 +41,12 @@ button{
 button:hover{
     color:gray;
 }
+.dark{
+    .navigation{
+        background-color: hsl(209, 23%, 22%);
+        border-bottom: none;
+    }
+    .button-container{
+        background-color: hsl(209, 23%, 22%);
+    }
+}
