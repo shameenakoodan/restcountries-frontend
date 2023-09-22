@@ -6,10 +6,10 @@ const DropDown = (props) => {
         <div>
             <div class="dropdown">
                 <select name={label}
-                value={searchTerm} 
+                defaultValue={searchTerm} 
                 onInput={handleInput}
                  className="selection-list">
-                    <option value="" disabled selected>Filter By Region</option>
+                    <option value="Filter By Regio">Filter By Region</option>
                     <option value="Americas">Americas</option>
                     <option value="Antarctic">Antarctic</option>
                     <option value="Asia">Asia</option>

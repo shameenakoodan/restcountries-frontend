@@ -1,20 +1,9 @@
-import React, { useState } from 'react';
-import './Popup.scss'; // Create this file in the same directory for styling
+import React from 'react';
+import './Popup.scss';
 
-const Popup = ({ imageUrls,heading,description,github }) => {
-  const [isPopupOpen, setPopupOpen] = useState(false);
-
-  const openPopup = () => {
-    setPopupOpen(true);
-  };
-
-  const closePopup = () => {
-    setPopupOpen(false);
-  };
-
+const Popup = ({ isPopupOpen, closePopup ,selectedFlag}) => {
   return (
-    <div className="popup-container">
-      <button onClick={openPopup}>Learn More</button>
+    <div className={`popup-container ${isPopupOpen ? 'open' : ''}`}>
       {isPopupOpen && (
         <div className="popup">
           <div className="popup-content">
@@ -22,6 +11,7 @@ const Popup = ({ imageUrls,heading,description,github }) => {
               &times;
             </span>
             Flag Details
+            {selectedFlag}
           </div>
         </div>
       )}
