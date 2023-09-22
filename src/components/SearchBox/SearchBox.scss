@@ -38,3 +38,14 @@ input:focus{
     flex-direction: row;
     background-color: white;
   }
+  @media (max-width: 767px) {
+
+    .search-box{
+        color: red;
+        padding-left: 6px;
+        padding-right: 0;
+    }
+    .search-container{
+        width: 242px;
+    }
+}

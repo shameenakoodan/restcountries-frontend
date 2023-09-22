@@ -22,3 +22,15 @@
     color: #fff;
     box-shadow: none;
 }
+@media (max-width: 767px) {
+    .search{
+        flex-direction: column;
+    }
+    .search-box{
+        color: red;
+    }
+    .flags-container{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
