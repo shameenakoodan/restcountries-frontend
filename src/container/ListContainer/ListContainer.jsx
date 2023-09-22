@@ -5,7 +5,7 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import DropDown from "../../components/DropDown/DropDown";
 
 const ListContainer = (props) => {
-    const {theme}=props;
+    const { theme } = props;
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState("");
@@ -43,10 +43,12 @@ const ListContainer = (props) => {
         const regionName = flag.region.toLowerCase();
         return flagName.includes(searchTerm) && regionName.includes(region);
     })
+    const callMe = () => {
+    }
     return (
-        <div className= {`main ${theme}`}>
+        <div className={`main ${theme}`}>
             <div className="search">
-                <SearchBox handleInput={handleInput}/>
+                <SearchBox handleInput={handleInput} />
                 <DropDown handleInput={handleDropDown} />
             </div>
 
@@ -56,8 +58,15 @@ const ListContainer = (props) => {
                 ) : (
                     <div className="flags-container">
                         {filteredFlags.map((item) => (
-                            <FlagCard key={item.key} population={item.population} name={item.name} capital={item.capital} region={item.region} flags={item.flags.png} />
-                        ))}
+                            <div key={item.key} onClick={callMe}>
+                                <FlagCard
+                                    population={item.population}
+                                    name={item.name}
+                                    capital={item.capital}
+                                    region={item.region}
+                                    flags={item.flags.png}
+                                />
+                            </div>))}
                     </div>
                 )}
             </div>

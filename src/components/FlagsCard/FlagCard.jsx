@@ -1,3 +1,4 @@
+import Popup from "../PopUp/PopUp";
 import "./FlagCard.scss";
 const FlagCard = (props) => {
 
@@ -15,7 +16,7 @@ const FlagCard = (props) => {
                 <br />
             </div>
 
-
+        <Popup />
         </div>
     )
 }
