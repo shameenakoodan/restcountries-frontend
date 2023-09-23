@@ -23,6 +23,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
     width: 800px;
+    text-align: left;
   }
   
   .close-button {
@@ -53,4 +54,10 @@
   .flag-pop{
     width: 500px;
     height: 300px;
+  }
+  .flag-text{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }

@@ -15,8 +15,8 @@ const Popup = ({ isPopupOpen, closePopup, selectedFlag }) => {
                 <img srcSet={selectedFlag.get('flag')} alt='FLag' className='flag-pop' />
               </div>
               <div className='flag-text'>
-              <div>
-                  <strong>Name:</strong> {selectedFlag.get('Name')}
+                <div>
+                  <h3>{selectedFlag.get('Name')}</h3>
                 </div>
                 <div>
                   <strong>Native Name:</strong> {selectedFlag.get('Native Name')}
