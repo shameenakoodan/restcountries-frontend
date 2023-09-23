@@ -61,3 +61,12 @@
     flex-direction: column;
     gap: 10px;
   }
+  @media (max-width: 767px) {
+    .flag-details-pop{
+      flex-direction: column;
+    }
+    .flag-pop{
+      width: 350px;
+      height: 230px;
+    }
+  }
