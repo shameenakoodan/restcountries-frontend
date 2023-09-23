@@ -1,6 +1,6 @@
 # REST Countries API with Color Theme Switcher
 
-![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
+![Design preview for the REST Countries API with color theme switcher coding challenge](./design/Front-desktop.png)
 
 Welcome to my solution for the REST Countries API with color theme switcher coding challenge. This project was built as part of the [Frontend Mentor](https://www.frontendmentor.io) challenges to improve my front-end development skills.
 
@@ -26,7 +26,7 @@ This project allows users to explore information about countries using the REST 
 - Filter countries by region.
 - Click on a country to view detailed information on a separate page.
 - Navigate to bordering countries from the detail page.
-- Toggle between light and dark color themes (optional).
+- Toggle between light and dark color themes.
 
 ## Getting Started
 ### Prerequisites
