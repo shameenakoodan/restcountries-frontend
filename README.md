@@ -15,7 +15,7 @@ Welcome to my solution for the REST Countries API with color theme switcher codi
     - [Installation](#installation)
 
 ## Demo
-You can see a live demo of this project [here](#insert_live_demo_link).
+You can see a live demo of this project [here](https://restcountries-frontend-seven.vercel.app/).
 
 ## Overview
 This project allows users to explore information about countries using the REST Countries API. Users can browse countries, search for specific countries, filter countries by region, view detailed information about a selected country, and even toggle between light and dark color themes.
