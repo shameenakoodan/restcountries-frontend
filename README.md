@@ -1,71 +1,73 @@
-# Getting Started with Create React App
+# REST Countries API with Color Theme Switcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
 
-## Available Scripts
+Welcome to my solution for the REST Countries API with color theme switcher coding challenge. This project was built as part of the [Frontend Mentor](https://www.frontendmentor.io) challenges to improve my front-end development skills.
 
-In the project directory, you can run:
+## Table of Contents
+- [REST Countries API with Color Theme Switcher](#rest-countries-api-with-color-theme-switcher)
+  - [Table of Contents](#table-of-contents)
+  - [Demo](#demo)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 
-### `npm start`
+## Demo
+You can see a live demo of this project [here](#insert_live_demo_link).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Overview
+This project allows users to explore information about countries using the REST Countries API. Users can browse countries, search for specific countries, filter countries by region, view detailed information about a selected country, and even toggle between light and dark color themes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- View a list of all countries from the REST Countries API on the homepage.
+- Search for a specific country using an input field.
+- Filter countries by region.
+- Click on a country to view detailed information on a separate page.
+- Navigate to bordering countries from the detail page.
+- Toggle between light and dark color themes (optional).
 
-### `npm test`
+## Getting Started
+### Prerequisites
+Before you begin, ensure you have met the following requirements:
+- [Insert any prerequisites here, e.g., Node.js, npm]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
+To install and run this project, follow these steps:
 
-### `npm run build`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+2. Change to the project directory:
+    cd your-repo-name
+3. Install dependencies
+    npm install
+4. Start the development server:
+    npm start
+5. Usage
+[Insert usage instructions here, if necessary]
+Technologies Used
+HTML5
+CSS3
+JavaScript
+[Insert any additional technologies or libraries used]
+Project Structure
+src/ - Contains the source code for the project.
+public/ - Contains static assets and the HTML entry point.
+Contributing
+Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request. Please follow the code of conduct in all interactions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+License
+This project is licensed under the MIT License.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contact
+If you have any questions or suggestions, feel free to reach out to me:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Email: shameena.koodan@gmail.com    
+GitHub: shameenakoodan
+Have fun building! 🚀
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# restcountries-frontend
