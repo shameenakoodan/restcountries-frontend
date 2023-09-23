@@ -13,6 +13,11 @@ Welcome to my solution for the REST Countries API with color theme switcher codi
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Demo
 You can see a live demo of this project [here](https://restcountries-frontend-seven.vercel.app/).
@@ -45,27 +50,26 @@ To install and run this project, follow these steps:
     npm install
 4. Start the development server:
     npm start
-5. Usage
-[Insert usage instructions here, if necessary]
-Technologies Used
-HTML5
-CSS3
-JavaScript
-[Insert any additional technologies or libraries used]
-Project Structure
+
+## Technologies Used
+    React, HTML5, CSS3,SCSS, JavaScript
+
+## Project Structure
 src/ - Contains the source code for the project.
 public/ - Contains static assets and the HTML entry point.
-Contributing
+
+## Contributing
 Contributions are welcome! If you have any improvements or bug fixes, feel free to open a pull request. Please follow the code of conduct in all interactions.
 
-License
+## License
 This project is licensed under the MIT License.
 
-Contact
+## Contact
 If you have any questions or suggestions, feel free to reach out to me:
 
 Email: shameena.koodan@gmail.com    
 GitHub: shameenakoodan
+
 Have fun building! 🚀
 
 
