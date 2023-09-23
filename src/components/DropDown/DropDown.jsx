@@ -4,7 +4,7 @@ const DropDown = (props) => {
 
     return (
         <div>
-            <div class="dropdown">
+            <div className="dropdown">
                 <select name={label}
                 defaultValue={searchTerm} 
                 onInput={handleInput}

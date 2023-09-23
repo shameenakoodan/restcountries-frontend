@@ -46,3 +46,11 @@
     color:  #FF5733;
     text-decoration: underline;
   }
+  .flag-details-pop{
+    display: flex;
+    flex-direction: row;
+  }
+  .flag-pop{
+    width: 500px;
+    height: 300px;
+  }

@@ -20,15 +20,38 @@ const ListContainer = (props) => {
     }
     const openPopup = (item) => {
         const myMap = new Map();
+        console.log(item);
+        myMap.set('Name',item.name.common);
+        const firstKey = Object.keys(item.name.nativeName)[0];
+        console.log(firstKey);
+        const natName = item.name.nativeName[firstKey].official;
+
+        console.log("NA"+natName)
+        myMap.set('Native Name',natName);
         myMap.set('flag', item.flags.png);
         myMap.set('population',item.population)
-        myMap.set('Capital', item.capital);
+        if(item.hasOwnProperty("capital"))
+            myMap.set('Capital', item.capital);
+        else
+            myMap.set('Capital',"N/A");
         myMap.set('Region',item.region);
-        myMap.set('Sub Region',item.subregion)
+        if(item.hasOwnProperty("subregion"))
+            myMap.set('Sub Region',item.subregion)
+        else
+            myMap.set('Sub Region',"N/A");
+
         myMap.set('TopLevel Domain',item.tld)
-        const firstKey = Object.keys(item.currencies)[0];
-        const chineseYuanName = item.currencies[firstKey].name;
-        myMap.set('Currencies',chineseYuanName);
+        if(item.hasOwnProperty("subregion")){
+            const firstKey = Object.keys(item.currencies)[0];
+            const chineseYuanName = item.currencies[firstKey].name;
+            myMap.set('Currencies',chineseYuanName);
+        }
+        else
+            myMap.set('Currencies',"N/A");
+        const languageValues = Object.values(item.languages);
+        console.log(languageValues);
+          myMap.set('Languages',languageValues);
+
         setSelectedFlag(myMap); // Set the selected flag data when a FlagCard is clicked
         setPopupOpen(true);
     }
@@ -70,8 +93,8 @@ const ListContainer = (props) => {
                     <p>Loading...</p>
                 ) : (
                     <div className="flags-container">
-                        {filteredFlags.map((item) => (
-                            <div key={item.key} onClick={() => openPopup(item)}>
+                        {filteredFlags.map((item,index) => (
+                            <div key={index} onClick={() => openPopup(item)}>
                                 <FlagCard
                                     population={item.population}
                                     name={item.name}
